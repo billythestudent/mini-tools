@@ -24,7 +24,7 @@
 - **📅 Takvim & Planlayıcı** - Kişisel etkinliklerinizi yönetin (Giriş gerektirir)
 
 ### Canlı Demo
-🌐 [Canlı Siteyi Görüntüle]()
+🌐 [Canlı Siteyi Görüntüle](https://mini-tools-six.vercel.app/)
 
 ## 🛠️ Teknolojiler
 
@@ -137,3 +137,4 @@ Bu proje MIT lisansı altında lisanslanmıştır - detaylar için [LICENSE](LIC
 
 
 </div>
+
