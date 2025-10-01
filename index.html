@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Tools - Ücretsiz Araçlar</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="stylesheet" href="styles/calendar.css">
+    <meta name="theme-color" content="#05161A">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Mini Tools</h1>
+            </div>
+            <div class="auth-buttons" id="authButtons">
+                <button class="btn-login" onclick="showLoginModal()">Giriş Yap</button>
+                <button class="btn-signup" onclick="showSignupModal()">Kayıt Ol</button>
+            </div>
+            <div class="user-menu" id="userMenu" style="display: none;">
+                <span class="user-greeting" id="userGreeting"></span>
+                <button class="btn-calendar" onclick="loadTool('calendar')">📅 Takvimim</button>
+                <button class="btn-logout" onclick="logout()">Çıkış Yap</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Kullanışlı Araçlar</h2>
+            <p>Ücretsiz ve hızlı çözümler</p>
+        </section>
+
+        <section class="tools-grid">
+            <!-- Resim Dönüştürücüler -->
+            <div class="tool-card" data-tool="jpg-to-png">
+                <h3>🔁 JPG to PNG</h3>
+                <p>JPG resimlerini PNG formatına dönüştürün</p>
+            </div>
+            
+            <div class="tool-card" data-tool="png-to-jpg">
+                <h3>🔁 PNG to JPG</h3>
+                <p>PNG resimlerini JPG formatına dönüştürün</p>
+            </div>
+            
+            <!-- PDF/Word Dönüştürücüler -->
+            <div class="tool-card" data-tool="pdf-to-word">
+                <h3>🔁 PDF to Word</h3>
+                <p>PDF dosyalarını Word formatına çevirin</p>
+            </div>
+            
+            <div class="tool-card" data-tool="word-to-pdf">
+                <h3>🔁 Word to PDF</h3>
+                <p>Word dosyalarını PDF formatına çevirin</p>
+            </div>
+            
+            <!-- Şifre Oluşturucu -->
+            <div class="tool-card" data-tool="password-generator">
+                <h3>🔑 Şifre Oluşturucu</h3>
+                <p>Güçlü ve güvenli şifreler oluşturun</p>
+            </div>
+
+            <!-- QR Kod Oluşturucu -->
+            <div class="tool-card" data-tool="qr-generator">
+                <h3>📱 QR Kod Oluşturucu</h3>
+                <p>Metin, URL veya iletişim bilgileriniz için QR kod oluşturun</p>
+            </div>
+
+            <!-- Takvim & Planlayıcı (Sadece giriş yapanlar için) -->
+            <div class="tool-card" data-tool="calendar" id="calendarTool" style="display: none;">
+                <h3>📅 Takvim & Planlayıcı</h3>
+                <p>Kişisel takviminiz ve planlarınız</p>
+            </div>
+
+            <div class="tool-card" data-tool="lorem-ipsum">
+           <h3>⌨️ Lorem Ipsum Generator</h3>
+       <p>Profesyonel metin yer tutucular oluşturun</p>
+           </div>
+
+        </section>
+
+        <!-- Araç içerikleri burada olacak -->
+        <div id="tool-container"></div>
+    </main>
+
+    <!-- Auth Modalleri -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAuthModal()">&times;</span>
+            <div id="authForms">
+                <!-- Login ve Signup formları buraya dinamik olarak yüklenecek -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mini Tools - Tüm araçlar ücretsiz </p>
+
+    </footer>
+
+    <!-- PDF.js for PDF processing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/image-converter.js"></script>
+    <script src="scripts/pdf-word-converter.js"></script>
+    <script src="scripts/password-generator.js"></script>
+    <script src="scripts/qr-generator.js"></script>
+    <script src="scripts/lorem-ipsum.js"></script>
+    <script src="scripts/gradient-generator.js"></script>
+</body>
+</html>
