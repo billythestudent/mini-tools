@@ -120,7 +120,7 @@ Katkılarınızı bekliyoruz! Lütfen şu adımları izleyin:
 
 ## 🐛 Hata Bildirimi
 
-Bir hata bulursanız lütfen [issue](https://github.com/billydev-js/mini-tools/issues) açın.
+Bir hata bulursanız lütfen [issue](https://github.com/billythestudent/mini-tools/issues) açın.
 
 ## 📝 Lisans
 
@@ -129,10 +129,11 @@ Bu proje MIT lisansı altında lisanslanmıştır - detaylar için [LICENSE](LIC
 ## 👨‍💻 Geliştirici
 
 **İbrahim**
-- GitHub: [@billydev-js](https://github.com/billydev-js)
+- GitHub: [@billythestudent](https://github.com/billythestudent)
 
 <div align="center">
 
 **⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!**
+
 
 </div>
